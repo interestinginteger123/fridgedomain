@@ -49,7 +49,7 @@ create_tables()
 def get_session() -> Iterator[Session]:
     session: Session = SessionLocal()
     try:
-        yield session
+        return session
     finally:
         session.close()
 
@@ -77,7 +77,7 @@ def create_fridge(
     return fridge
 
 
+#Small example entry point to prove working
 if __name__ == "__main__":
     fridge = {'shelves':5}
-    
     create_fridge(fridge)

@@ -60,7 +60,7 @@ class FridgeCommandUseCaseImpl(FridgeCommandUseCase):
     def create_fridge(self, data: FridgeCreateModel) -> Optional[FridgeReadModel]:
         try:
             _uuid = str(uuid.uuid4())
-            fridge = Fridge(id=_uuid, shelves=1)
+            fridge = Fridge(id=_uuid, shelves=int(data['shelves']))
             self.uow.fridge_repository.create(fridge)
             self.uow.commit()
 
