@@ -1,6 +1,6 @@
 import pytest
 
-from dddpy.domain.fridge import Fridge
+from src.domain.fridge import Fridge
 
 
 class TestFridge:

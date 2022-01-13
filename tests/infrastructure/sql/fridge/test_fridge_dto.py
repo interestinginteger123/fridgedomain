@@ -1,8 +1,8 @@
 import pytest
-from dddpy.domain import fridge
+from src.domain import fridge
 
-from dddpy.domain.fridge import Fridge
-from dddpy.infrastructure.sql.fridge import FridgeDTO
+from src.domain.fridge import Fridge
+from src.infrastructure.sql.fridge import FridgeDTO
 
 
 class TestFridgeDTO:
