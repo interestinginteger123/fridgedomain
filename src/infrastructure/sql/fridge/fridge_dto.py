@@ -3,9 +3,9 @@ from typing import Union
 
 from sqlalchemy import Column, Integer, String
 
-from dddpy.domain.fridge import Fridge
-from dddpy.infrastructure.sql.database import Base
-from dddpy.usecase.fridge import FridgeReadModel
+from src.domain.fridge import Fridge
+from src.infrastructure.sql.database import Base
+from src.usecase.fridge import FridgeReadModel
 
 
 def unixtimestamp() -> int:

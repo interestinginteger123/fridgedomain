@@ -3,7 +3,7 @@ from typing import List, Optional
 from sqlalchemy.orm.exc import NoResultFound
 from sqlalchemy.orm.session import Session
 
-from dddpy.usecase.fridge import FridgeQueryService, FridgeReadModel
+from src.usecase.fridge import FridgeQueryService, FridgeReadModel
 
 from .fridge_dto import FridgeDTO
 

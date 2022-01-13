@@ -4,32 +4,25 @@ from typing import Iterator, List
 
 from sqlalchemy.orm.session import Session
 
-from dddpy.domain.fridge import (
-    FridgeNotFoundError,
+from src.domain.fridge import (
     FridgeAlreadyExistsError,
-    ShelvesNotFoundError,
     FridgeRepository
 )
 
-from dddpy.infrastructure.sql.fridge import (
+from src.infrastructure.sql.fridge import (
     FridgeCommandUseCaseUnitOfWorkImpl,
     FridgeQueryServiceImpl,
     FridgeRepositoryImpl,
 )
 
-from dddpy.infrastructure.sql.database import SessionLocal, create_tables
-from dddpy.presentation.schema.fridge.fridge_error_message import (
+from src.infrastructure.sql.database import SessionLocal, create_tables
+
+from src.presentation.schema.fridge.fridge_error_message import (
     ErrorMessageShelvesNotFound,
     ErrorMessageFridgeNotFound,
 )
 
-
-from dddpy.presentation.schema.fridge.fridge_error_message import (
-    FridgeNotFoundError,
-    ShelvesNotFoundError
-)
-
-from dddpy.usecase.fridge import (
+from src.usecase.fridge import (
     FridgeCommandUseCase,
     FridgeCommandUseCaseImpl,
     FridgeCommandUseCaseUnitOfWork,

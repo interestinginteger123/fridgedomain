@@ -1,6 +1,6 @@
 from pydantic import BaseModel, Field
 
-from dddpy.domain.fridge import (
+from src.domain.fridge import (
     FridgeNotFoundError,
     ShelvesNotFoundError
 )

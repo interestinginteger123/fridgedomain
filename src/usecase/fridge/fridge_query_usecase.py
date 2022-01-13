@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import List, Optional
 
-from dddpy.domain.fridge import FridgeNotFoundError, FridgeNotFoundError
+from src.domain.fridge import FridgeNotFoundError, FridgeNotFoundError
 
 from .fridge_query_model import FridgeReadModel
 from .fridge_query_service import FridgeQueryService

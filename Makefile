@@ -4,7 +4,6 @@ MYPY=$(POETRY) run mypy --ignore-missing-imports
 BLACK=$(POETRY) run black
 ISORT=$(POETRY) run isort
 PYLINT=$(POETRY) run pylint
-UVICORN=$(POETRY) run uvicorn
 PACKAGE=dddpy
 
 install:

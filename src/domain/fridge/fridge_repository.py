@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import Optional
 
-from dddpy.domain.fridge import Fridge
+from src.domain.fridge import Fridge
 
 
 class FridgeRepository(ABC):

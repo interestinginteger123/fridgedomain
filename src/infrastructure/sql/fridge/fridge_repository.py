@@ -3,8 +3,8 @@ from typing import Optional
 from sqlalchemy.orm.exc import NoResultFound
 from sqlalchemy.orm.session import Session
 
-from dddpy.domain.fridge import Fridge, FridgeRepository
-from dddpy.usecase.fridge import FridgeCommandUseCaseUnitOfWork
+from src.domain.fridge import Fridge, FridgeRepository
+from src.usecase.fridge import FridgeCommandUseCaseUnitOfWork
 
 from .fridge_dto import FridgeDTO
 

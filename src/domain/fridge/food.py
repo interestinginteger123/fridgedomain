@@ -10,6 +10,7 @@ class Food:
     ):
         self.id: str = id
         self.shelf: int = shelf
+        self.type: str = type
     
     
     def __eq__(self, o: object) -> bool:

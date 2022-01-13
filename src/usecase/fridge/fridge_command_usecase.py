@@ -3,7 +3,7 @@ import uuid
 from abc import ABC, abstractmethod
 from typing import Optional, cast
 
-from dddpy.domain.fridge import (
+from src.domain.fridge import (
     Fridge,
     FridgeRepository,
     FridgeNotFoundError,
